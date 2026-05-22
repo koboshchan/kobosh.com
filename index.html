@@ -4,70 +4,88 @@
     <title>Kobosh Joei Truth | Kobosh.com</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+    <meta
+      name="description"
+      content="Kobosh Joei Truth"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index-modern.css" />
   </head>
-
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <div class="logo">
-          <span class="fa-lg"
-            ><span class="fa-lg"><span>🍆</span></span></span
-          >
-        </div>
-        <div class="content">
-          <div class="inner">
-            <h1>Kobosh Joei Truth</h1>
-            <h2>ON TOP</h2>
-          </div>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="rules">Rules</a></li>
-            <li><a href="https://discord.gg/kobosh">.gg/kobosh</a></li>
-            <li>
-              <a href="https://www.urbandictionary.com/define.php?term=kobosh"
-                >Urbandictionary</a
-              >
-            </li>
-            <li><a href="dict">Dictionary</a></li>
-            <li><a href="#dev">Dev Contacts</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <!-- Main -->
-      <div id="main">
-        <article id="dev">
-          <h2 class="major">Dev Contacts</h2>
-          <p>Discord lz got banned, @martinchen021</p>
-          <br />
-          <p>Telegram @lucasz228</p>
-          <br />
-          <p>github /zlc1004, /FWO-martinc021</p>
-        </article>
-      </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <p>lz got banned on discord</p>
-      </footer>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="grid"></span>
     </div>
 
-    <!-- BG -->
-    <div id="bg"></div>
+    <main class="page-shell">
+      <section class="hero-card reveal">
+        <p class="eyebrow">KJT</p>
+        <h1>Kobosh Joei Truth</h1>
+        <p class="subtitle">Random group of people. Since 2023.</p>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <div class="action-row">
+          <a class="action action-solid" href="rules">Read Rules</a>
+          <a class="action action-ghost" href="dict">Open Dictionary</a>
+        </div>
+
+        <nav class="quick-links" aria-label="External links">
+          <a href="https://www.urbandictionary.com/define.php?term=kobosh" target="_blank" rel="noopener noreferrer">Urbandictionary</a>
+          <a href="iminthethickofit">I'm In The Thick Of It</a>
+          <a href="nothing">Nothing</a>
+        </nav>
+      </section>
+
+      <div class="bottom-row">
+        <section class="contacts-card reveal" id="dev">
+          <h2>Dev Contacts</h2>
+          <ul>
+            <li>
+              <span class="label">Telegram</span>
+              <span class="value">
+                <a href="https://t.me/kobosh_com" target="_blank" rel="noopener noreferrer">@kobosh_com</a>
+              </span>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <span class="value">
+                <a href="https://github.com/koboshchan" target="_blank" rel="noopener noreferrer">/koboshchan</a>,
+                <a href="https://github.com/koboshcom" target="_blank" rel="noopener noreferrer">/koboshcom</a>
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="services-card reveal" id="services">
+          <h2>Services</h2>
+          <ul>
+            <li>
+              <span class="label">Notes</span>
+              <span class="value">
+                <a href="https://notes.kobosh.com" target="_blank" rel="noopener noreferrer">notes.kobosh.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="label">AI</span>
+              <span class="value">
+                <a href="https://ai.kobosh.com" target="_blank" rel="noopener noreferrer">ai.kobosh.com</a>
+              </span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Kobosh.com</p>
+      <p id="year-stamp"></p>
+    </footer>
+
+    <script src="assets/js/index-modern.js"></script>
   </body>
 </html>
