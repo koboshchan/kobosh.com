@@ -308,26 +308,86 @@ h2 {
 }
 
 @media (max-width: 900px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  body {
+    min-height: 100dvh;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.9rem 0.75rem 1.1rem;
+  }
+
   .page-shell {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: min(82dvh, 50rem);
+    grid-template-rows: auto auto;
+    height: auto;
     margin-top: 0;
+    width: 100%;
+    gap: 0.9rem;
   }
 
   .bottom-row {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.9rem;
   }
 
   .hero-card {
     padding: 1.5rem;
   }
 
+  .contacts-card,
+  .services-card {
+    padding: 1.05rem;
+  }
+
+  .action-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+  }
+
+  .action {
+    text-align: center;
+    padding: 0.85rem 1rem;
+  }
+
+  .quick-links {
+    margin-top: 1.2rem;
+    gap: 0.55rem;
+  }
+
+  .quick-links a {
+    width: 100%;
+    text-align: center;
+    padding: 0.55rem 0.8rem;
+  }
+
+  .label {
+    font-size: 0.72rem;
+  }
+
   .site-footer {
     margin-top: 0.8rem;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(1.6rem, 9vw, 2.1rem);
+  }
+
+  .subtitle {
+    font-size: 0.96rem;
+    line-height: 1.5;
   }
 }
 
