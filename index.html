@@ -5,88 +5,106 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Official portal of the Kobosh Joei Truth (KJT) community. Est. September 2023." />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/index-modern.css" />
   </head>
   <body>
-    <!-- Ambient background visuals -->
-    <div class="ambient" aria-hidden="true">
-      <span class="orb orb-one"></span>
-      <span class="orb orb-two"></span>
-      <span class="grid"></span>
-    </div>
+    <nav class="nav">
+      <a class="wordmark" href="./">Kobosh</a>
+      <div class="nav-links">
+        <a href="rules">Rules</a>
+        <a href="dict">Dictionary</a>
+      </div>
+    </nav>
 
-    <main class="page-shell">
-      <section class="hero-card reveal">
-        <header class="nav-header">
-          <div class="nav-header-left">
-            <span class="eyebrow">KJT EST. 2023</span>
+    <header class="hero">
+      <span class="eyebrow">Est. 2023 · Metro Vancouver</span>
+      <h1 class="display">Kobosh Joei Truth</h1>
+      <p class="lede">A dedicated, local group of people spreading the truth since 2023.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="rules">Read Rules</a>
+        <a class="btn btn-secondary" href="dict">Open Dictionary</a>
+      </div>
+      <svg class="scroll-cue" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Explore</span>
+            <h2>Everything you need to know.</h2>
           </div>
-          <button class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
-            <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-            <svg class="moon-icon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-          </button>
-        </header>
-
-        <h1>Kobosh Joei Truth</h1>
-        <p class="subtitle">A dedicated, local group of people in Metro Vancouver. Spreading the truth since 2023.</p>
-
-        <div class="action-row">
-          <a class="action action-solid" href="rules">Read Rules</a>
-          <a class="action action-ghost" href="dict">Open Dictionary</a>
+          <div class="tile-grid">
+            <a class="tile" href="rules" data-reveal>
+              <h3>Rules &amp; Beliefs</h3>
+              <p>The 15 core rules, community history, demographics, and archive.</p>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </a>
+            <a class="tile" href="dict" data-reveal data-reveal-delay="80">
+              <h3>Dictionary</h3>
+              <p>Official slang, terminology, and definitions of the KJT lexicon.</p>
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </a>
+          </div>
         </div>
-
-        <nav class="quick-links" aria-label="Quick links">
-          <a href="https://www.urbandictionary.com/define.php?term=kobosh" target="_blank" rel="noopener noreferrer">Urbandictionary</a>
-        </nav>
       </section>
 
-      <div class="bottom-row">
-        <section class="contacts-card reveal" id="dev">
-          <h2>Dev Contacts</h2>
-          <ul class="interactive-list">
-            <li>
-              <span class="label">Telegram</span>
-              <span class="value">
-                <a href="https://t.me/kobosh_com" target="_blank" rel="noopener noreferrer">@kobosh_com</a>
-              </span>
-            </li>
-            <li>
-              <span class="label">GitHub</span>
-              <span class="value">
-                <a href="https://github.com/koboshchan" target="_blank" rel="noopener noreferrer">/koboshchan</a>
-                <a href="https://github.com/koboshcom" target="_blank" rel="noopener noreferrer">/koboshcom</a>
-              </span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="services-card reveal" id="services">
-          <h2>Services</h2>
-          <ul class="interactive-list">
-            <li>
-              <span class="label">Notes</span>
-              <span class="value">
-                <a href="https://notes.kobosh.com" target="_blank" rel="noopener noreferrer">notes.kobosh.com</a>
-              </span>
-            </li>
-            <li>
-              <span class="label">AI</span>
-              <span class="value">
-                <a href="https://ai.kobosh.com" target="_blank" rel="noopener noreferrer">ai.kobosh.com</a>
-              </span>
-            </li>
-          </ul>
-        </section>
-      </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Connect</span>
+            <h2>Reach the community.</h2>
+          </div>
+          <div class="rows-grid">
+            <div class="rows-group" data-reveal>
+              <h3>Dev Contacts</h3>
+              <div class="info-row">
+                <span class="label">Telegram</span>
+                <span class="value">
+                  <a href="https://t.me/kobosh_com" target="_blank" rel="noopener noreferrer">@kobosh_com</a>
+                </span>
+              </div>
+              <div class="info-row">
+                <span class="label">GitHub</span>
+                <span class="value">
+                  <a href="https://github.com/koboshchan" target="_blank" rel="noopener noreferrer">/koboshchan</a>
+                  <a href="https://github.com/koboshcom" target="_blank" rel="noopener noreferrer">/koboshcom</a>
+                </span>
+              </div>
+            </div>
+            <div class="rows-group" data-reveal data-reveal-delay="80">
+              <h3>Services</h3>
+              <div class="info-row">
+                <span class="label">Notes</span>
+                <span class="value">
+                  <a href="https://notes.kobosh.com" target="_blank" rel="noopener noreferrer">notes.kobosh.com</a>
+                </span>
+              </div>
+              <div class="info-row">
+                <span class="label">AI</span>
+                <span class="value">
+                  <a href="https://ai.kobosh.com" target="_blank" rel="noopener noreferrer">ai.kobosh.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <a class="quiet-link" href="https://www.urbandictionary.com/define.php?term=kobosh" target="_blank" rel="noopener noreferrer">
+            Kobosh on Urban Dictionary
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7" /><path d="M7 7h10v10" /></svg>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; Kobosh.com</p>
-      <p id="year-stamp" class="tabular-nums"></p>
+      <div class="container">
+        <p>&copy; Kobosh.com</p>
+        <p id="year-stamp" class="tabular-nums"></p>
+      </div>
     </footer>
 
     <script src="assets/js/index-modern.js"></script>
